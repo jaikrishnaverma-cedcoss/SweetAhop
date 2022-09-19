@@ -1,0 +1,26 @@
+.rowsOfCards
+{
+    flex-direction: row !important;
+
+}
+.rowsOfCards .col
+{
+    width: 400px;
+    margin: 10px;
+}
+.rowsOfCards .col img{
+max-height: 15vw;
+}
+.rowsOfCards .row{
+    overflow-y: scroll;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .row {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

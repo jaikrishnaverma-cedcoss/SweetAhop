@@ -1,0 +1,71 @@
+ .App
+ {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  justify-content: center;
+ }
+ 
+ .login{
+   margin: 3% 0%;
+    width:60%;
+    height: 70%;
+    padding: 5% 1%;
+ max-width: 300px;
+ border-radius: 30px 30px;
+ font-family: 'Sofia';font-size: 22px;
+ }
+ .login #logo
+ {
+  width: 100px;
+ }
+ .form{
+   margin-top: 10%;
+ }
+ .foot{
+   width: 100%;
+   margin-top: 3%;
+ }
+ .foot button{
+   float: right;
+ }
+ ._2XBDTIVigBJDybhZvL-hU3,._2vh2GgcZ7Hy6cU_kvl2ZZ4 a {
+   width: 100% !important;
+   }
+  
+   .foot{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .foot p{
+      font-size: 13px;
+   }
+   .linker{
+    font-size: 15px;
+   }
+   .sign .form{
+      margin-top: 3%;
+   }
+  .form input
+   {
+      padding: 0px !important;
+      padding-left: 5% !important;
+      font-size: 16px !important;
+   }
+   .sign .form label
+   {
+      font-size: 16px;
+   }
+   p{
+  margin-left: 3%;
+   }
+ .form input::placeholder
+   {
+      color: grey;
+   }
+   .notify{
+      font-weight: 900;
+      color: #6067ff;
+      text-decoration:overline black;
+   }

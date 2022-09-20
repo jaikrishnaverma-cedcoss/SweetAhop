@@ -50,8 +50,10 @@
 *,body{
   font-family: 'Sofia';
 }
-.nav2 button{
+.nav2 button,.nav2 button a{
 font-family: 'Courier New', Courier, monospace;
+text-decoration: none;
+color: #000000;
 }
 .nav2 button:hover{
   box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
@@ -62,4 +64,12 @@ font-family: 'Courier New', Courier, monospace;
 }
 h3 span{
   color: #08276c ;
+}
+
+.xx table td{
+  text-align: center;
+  }
+.xx table *{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }

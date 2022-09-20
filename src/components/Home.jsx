@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Cards from './HomeElements/Cards';
 import RowsOfcard from './HomeElements/RowsOfCards';
 import Foot from './master/Foot';
 import Product from './master/Product';
 function Home(props) {
-  const [prd,setPrd]=useState(-1);
+  // const [prd,setPrd]=useState(-1);
   const getProduct=(id)=>{
-    setPrd(id)
+    props.getProduct(id)
   }
-  if(prd===-1)
+  if(props.prd===-1)
   {
   return (
     <>
@@ -18,8 +19,11 @@ function Home(props) {
      <button className="btn btn-trans fclBlack">MITHAI</button>
      <button className="btn btn-trans fclBlack">CELECRATION BOXES</button>
      <button className="btn btn-trans fclBlack">GIFTING</button>
-        <button className="btn btn-trans fclBlack">ABOUT</button>
-        <button className="btn btn-trans fclBlack">CONTACT US</button>
+        <button className="btn btn-trans fclBlack">
+               <Link to='/About' className="row flexAIC"  style={{width:"100%"}}>ABOUT</Link></button>
+        <button className="btn btn-trans fclBlack">
+        <Link to='/Contact_us'>CONTACT US</Link>
+          </button>
       </div>
 
       <div className="nav2 clr2 row w100 flexAIC" >
@@ -44,7 +48,7 @@ function Home(props) {
   else{
     return(
       <>
-      <Product currentId={prd}  addToCart={props.addToCart}  />
+      <Product currentId={props.prd}  incrDecr={props.incrDecr} addToCart={props.addToCart}  />
       </>
     );
   }

@@ -7,7 +7,7 @@ function Nav(props) {
       <>
          <div className="nav clr4" style={{width:"98%"}}>
           <Link to='/' style={{display:"block",height:"100%",width:"8%"}}>
-            <img src="logoshop.png" alt="" className="logo" />
+            <img onClick={props.changer} src="logoshop.png" alt="" className="logo" />
           </Link>  
             <div className="row w20 flexAIC ">
             <div className="row bRd5 p3 flexAIC hover">
@@ -21,15 +21,17 @@ function Nav(props) {
             </div>
             </div>
             <div className="searchbox w33 clr4">
-               <input type="text" className='' />
-               <select name="" className='border-outline-none bRd5 clr4' id="">
+               <input type="text" onChange={props.Filterer} className='' />
+               <select name=""  className='border-outline-none bRd5 clr4' id="">
+                 
                   <option value="All">All</option>
                </select>
             </div>
+           
           <button className='btn clr3 categories row flexAIC' style={{width:"9%"}}> <h5>Categories</h5> &nbsp;<i className="fa fa-angle-down" aria-hidden="true"></i> </button>
             <div className="col flexAIC w20"> 
             <div className="col bRd5 p3 flexAIC hover">
-               <Link to='/login' className="row flexAIC"  style={{width:"100%"}}><p>Hello , Sign In</p></Link>
+               <Link to='/login' className="row flexAIC"  style={{width:"100%"}}><p>{props.session}</p></Link>
                <h4>Account & Details <i className="fa fa-angle-down" aria-hidden="true"></i></h4>
             </div>
             </div>

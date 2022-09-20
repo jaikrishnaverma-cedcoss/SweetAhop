@@ -82,7 +82,7 @@ class Login extends Component {
         {
             return ( 
                 <>
-                <div className="login sign lbg4">
+                <div className="login sign lbg4" style={{minWidth:"20%"}}>
                     <img id="logo" src="mcdonald-g3a79aa200_640.png" alt="" />
                     
                 <p className="notify">{this.state.notify}</p>

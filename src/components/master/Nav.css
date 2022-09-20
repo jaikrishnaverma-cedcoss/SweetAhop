@@ -6,3 +6,16 @@ background-color: aliceblue;
     background-color: #fca311;
     
 }
+.liveSuggestions{
+position: absolute;
+top: 8%;
+left: 24.1%;
+min-width: 26%;
+background-color: white;
+z-index: 10000;
+min-height: 0px;
+padding: 0px;
+}
+.shover:hover{
+background-color: #fca311;
+}
